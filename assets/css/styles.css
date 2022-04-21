@@ -1,0 +1,27 @@
+.d-inline-block {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-image: url(../img/bg-main.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.pt-4 {
+  padding-top: 4rem;
+}
+
+.casilla {
+  width: 25px;
+  height: 25px;
+}
