@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "8f252aa1-c420-41a6-a534-1b122766439a",
+		"name": "SENA - Desarrollo Web PHP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/controller/readController.php",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"controller",
+						"readController.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "transaccion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fila",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "columna",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "accion",
+							"value": "comprar",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/controller/transaccionController.php",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"controller",
+						"transaccionController.php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://teatro.test",
+			"type": "string"
+		}
+	]
+}

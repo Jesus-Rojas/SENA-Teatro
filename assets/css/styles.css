@@ -9,12 +9,26 @@
 body {
   margin: 0;
   background-image: url(../img/bg-main.jpg);
-  height: 100vh;
   background-size: cover;
 }
 
 .text-white {
   color: #fff;
+}
+.text-right {
+  text-align: right;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.text-transparent{
+  color: transparent;
 }
 
 .pt-4 {
@@ -24,4 +38,18 @@ body {
 .casilla {
   width: 25px;
   height: 25px;
+}
+
+#respuesta {
+  padding-top: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.pb-custom {
+  padding-bottom: .4rem;
 }
